@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <title>Nandhakumar | Portfolio</title>
+</head>
+<body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex justify-evenly items-center z-50 bg-white shadow-xl bg-opacity-100">
+        <h1 class="w-30 text-3xl/10 mr-14 md:text-xs">Nandhakumar</h1>
+        <ul class=" hidden md:flex items-center gap-6 lg:gap-10 rounded-full px-12 py-3 font-medium">
+            <li class="hover:underline"><a href="#top">Home</a></li>
+            <li class="hover:underline"><a href="#about">About</a></li>
+            <li class="hover:underline"><a href="#projects">Projects</a></li>
+            <li class="hover:underline"><a href="#skills">Skills</a></li>
+            <li class="hover:underline"><a href="#education">Education</a></li>
+            <li class="hover:underline"><a href="#contact">Contact</a></li>
+        </ul>
+        <div>
+            <button class="block md:hidden ml-3" onclick="openmenu()">
+                <img src="./images/menu-black.png" alt="" class="w-6">
+            </button>
+        </div>
+    </nav>
+    <ul id="sidemenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 gap-6 h-screen bg-rose-100 transition duration-500">
+        <div class="absolute right-6 top-6 w-6" onclick="closemenu()">
+            <img src="./images/close-black.png" alt="" class="w-6 cursor-pointer">
+        </div>
+        <li class="text-center hover:underline"><a href="#top" onclick="closemenu()">Home</a></li>
+        <li class="text-center hover:underline"><a href="#about" onclick="closemenu()">About</a></li>
+        <li class="text-center hover:underline"><a href="#projects" onclick="closemenu()">Projects</a></li>
+        <li class="text-center hover:underline"><a href="#skills" onclick="closemenu()">Skills</a></li>
+        <li class="text-center hover:underline"><a href="#education" onclick="closemenu()">Education</a></li>
+        <li class="text-center hover:underline"><a href="#contact" onclick="closemenu()">Contact</a></li>
+    </ul>
+
+    <!-- ------- header --------- -->
+
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4" id="">
+        <div id="header1">
+            <img src="images/img3.png" alt="" class="mt-40 rounded-full header-img">
+        </div>
+        <h3 id="header2" class="flex items-center gap-2 text-xl md:text-2xl mb-3">Hello!
+            <img src="images/hand-icon.png" alt="" class="w-7">
+        </h3>
+        <h1 id="front" class="text-3xl sm:text-6xl lg:text-[66px]">I'm a <span class="writer"></span><label for="">|</label></h1>
+        <p id="front-p" class="max-w-2xl mx-auto text-xl">I'm a Front-End Developer with expertise in HTML, CSS, and JavaScript, React JS and Tailwind specializing in building responsive and user-friendly web applications. I’m passionate about New front-end technologies to enhance user experiences.</p>
+
+        <div id="front-btn" class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">Contact Me 
+                <img src="./images/right-arrow-white.png" alt="" class="w-4">
+            </a>
+            <a href="./images/Frontend_Resume (2).pdf" download class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white">My Resume 
+                <img src="./images/download-icon.png" alt="" class="w-4">
+            </a>
+        </div>
+    </div>
+
+    <!-- -------- About Me ------- -->
+
+    <div id="about" class="h-screen px-[12%] py-28">
+        <h2 id="about-h2" class="text-center text-5xl underline">About Me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div id="about-p" class="flex-1">
+                <p class="mb-10 max-w-2xl text-xl">Hi ! I’m Nandhakumar, a Frontend Developer.
+                   I’m dedicated to writing clean, efficient code and continuously exploring the latest technologies. Let’s connect and bring your project to life!</p>
+            </div>
+            <div id="about-gif" class="max-w-max mx-auto">
+                <img src="./images/about-gif.gif" alt="" class="w-72 sm:w-[600px] rounded-3xl max-w-none">
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- Projects --------- -->
+
+    <div id="projects" class="projects py-28">
+        <div id="project" class="flex flex-col gap-4">
+            <h2 class="text-center text-5xl underline">Projects</h2>
+            <h3 class="text-center text-xl">Here are some of works.</h3>
+        </div>
+        <div class="projects-grid">
+
+            <div id="card" class="project-card">
+                <img src="./images/project9.png" alt="">
+                <h3>Calculator</h3>
+                <p>HTML | CSS | JAVASCRIPT</p>
+                <div class="btn-grp">
+                    <a href="https://nandhakumargk.github.io/Calculator/">Live Demo</a>
+                    <a href="https://github.com/nandhakumargk/Calculator">Github</a>
+                </div>
+            </div>
+
+            <div id="card" class="project-card">
+                <img src="./images/Project2.png" alt="">
+                <h3>To-Do List</h3>
+                <p>HTML | CSS | JAVASCRIPT</p>
+                <div class="btn-grp">
+                    <a href="https://nandhakumargk.github.io/To-Do-List/">Live Demo</a>
+                    <a href="https://github.com/nandhakumargk/To-Do-List">Github</a>
+                </div>
+            </div>
+
+            <div id="card" class="project-card">
+                <img src="./images/Project3.png" alt="">
+                <h3>BookSky</h3>
+                <p>HTML | CSS | JAVASCRIPT</p>
+                <div class="btn-grp">
+                    <a href="https://nandhakumargk.github.io/BookSky/">Live Demo</a>
+                    <a href="https://github.com/nandhakumargk/BookSky">Github</a>
+                </div>
+            </div>
+
+            <div id="card" class="project-card">
+                <img src="./images/Project4.png" alt="">
+                <h3>Spicy Hut</h3>
+                <p>HTML | CSS </p>
+                <div class="btn-grp">
+                    <a href="https://nandhakumargk.github.io/Spice-Hut/">Live Demo</a>
+                    <a href="https://github.com/nandhakumargk/Spice-Hut">Github</a>
+                </div>
+            </div>
+
+            <div id="card" class="project-card">
+                <img src="./images/Project1.png" alt="">
+                <h3>Nostra</h3>
+                <p>HTML | CSS | JAVASCRIPT</p>
+                <div class="btn-grp">
+                    <a href="https://nandhakumargk.github.io/Nostra/">Live Demo</a>
+                    <a href="https://github.com/nandhakumargk/Nostra">Github</a>
+                </div>
+            </div>
+
+            <div id="card" class="project-card">
+                <img src="./images/project8.png" alt="">
+                <h3>Udemy Clone</h3>
+                <p>HTML | CSS </p>
+                <div class="btn-grp">
+                    <a href="https://nandhakumargk.github.io/Udemy-Clone/">Live Demo</a>
+                    <a href="https://github.com/nandhakumargk/Udemy-Clone">Github</a>
+                </div>
+            </div>
+            <div id="card" class="project-card just">
+                <img src="./images/project7.png" alt="">
+                <h3>Trip Advicer</h3>
+                <p>HTML | CSS </p>
+                <div class="btn-grp">
+                    <a href="https://nandhakumargk.github.io/Trip-Advicer/">Live Demo</a>
+                    <a href="https://github.com/nandhakumargk/Trip-Advicer">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- Skills ---------- -->
+
+    <div id="skills" class="flex flex-col justify-center items-center py-28">
+        <div id="skills-title">
+            <h2 class="text-center text-5xl underline">Skills & Experiences</h2>
+        </div>
+        <div class="skills-container">
+            <div id="skill" class="skill1">
+                <img src="./images/Skills/html.png" alt="">
+                <p>Html</p>
+            </div>
+            <div id="skill" class="skill2">
+                <img src="./images/Skills/css.png" alt="">
+                <p>Css</p>
+            </div>
+            <div id="skill" class="skill3">
+                <img src="./images/Skills/javascript.png" alt="">
+                <p>JavaScript</p>
+            </div>
+            <div id="skill" class="skill4">
+                <img src="./images/Skills/tailwind.png" alt="">
+                <p>Tailwind</p>
+            </div>
+            <div id="skill" class="skill5">
+                <img src="./images/Skills/react.png" alt="">
+                <p>React</p>
+            </div>
+            <div id="skill" class="skill6">
+                <img src="./images/Skills/git.png" alt="">
+                <p>Git</p>
+            </div>
+            <div id="skill" class="skill7">
+                <img src="./images/Skills/github-logo.png" alt="">
+                <p>Github</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- Education ---------- -->
+
+    <div id="education" class="w-full h-full px-[12%] py-28">
+        <h2 class="text-center text-5xl underline">Education</h2>
+    </div>
+    <div class="timeline">
+        <div class="education left-education">
+            <img src="./images/college-main icon.jpg" alt="">
+            <div class="text-box">
+                <h2>RVS College of Arts and Science,Sulur (Autonomous)</h2>
+                <p>Bachelor of Science in Computer Science</p>
+                <small>Jun 2021 - Apr 2024</small>
+                <span class="left-education-arrow"></span>
+            </div>
+        </div>
+        <div class="education right-education">
+            <img src="./images/highschool.jpg" alt="">
+            <div class="text-box">
+                <h2>Sri Ragavendra Matric Higher Secondary School</h2>
+                <p>High school</p>
+                <small>Jun 2018 - Apr 2020</small>
+                <span class="right-education-arrow"></span>
+            </div>
+        </div>
+        <div class="education left-education">
+            <img src="./images/middle-school-main.jpg" alt="">
+            <div class="text-box">
+                <h2>HRM Memorial Matriculation School</h2>
+                <p>Middle School</p>
+                <small>Jun 2017 - Apr 2018</small>
+                <span class="left-education-arrow"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------- Contact --------- -->
+
+    <div id="contact" class="w-full h-[80%] py-28">
+        <h2 class="text-center text-5xl underline">Contact</h2>
+        <h4 class="text-center text-2xl mt-4">Connect with me !</h4>
+        <div>
+            <form method="post" action="https://api.web3forms.com/submit">
+                <input type="hidden" name="access_key" value="e6828220-40ff-4a2e-b9eb-a1bb83016208">
+                <div class="input">
+                    <input type="text" placeholder="Enter your Name" required name="name">
+                    <input type="email" placeholder="Enter your E-mail" required  name="email">
+                </div>
+                <div class="footer-down">
+                    <textarea rows="8" id="" placeholder="Enter your Message" required name="message"></textarea>
+                    <button>Submit Now</button>
+                </div>
+            </form>
+        </div>
+        <div class="logos">
+            <a href="https://wa.me/9345997728">
+                <img src="./images/WhatsApp.main.webp" alt="">
+            </a>
+            <a href="mailto:inandhakumargk@gmail.com" target="_blank">
+                <img src="./images/gmail.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/nandhakmargk/">
+                <img src="./images/LinkedIn.png" alt="">
+            </a>
+            <a href="https://github.com/nandhakumargk">
+                <img src="./images/github.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/nandha._.af/">
+                <img src="./images/instagram-logo.webp" alt="">
+            </a>
+        </div>
+        <h2 id="creator" class="text-center text-xl">Designed by Nandhakumar</h2>
+    </div>
+
+    <a href="#top" class="arrow">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
